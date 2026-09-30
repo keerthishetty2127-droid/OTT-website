@@ -1,0 +1,431 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:white;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+button,input,select{
+font-family:inherit;
+}
+
+.offer{
+height:35px;
+background:#151515;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:7px;
+font-size:9px;
+}
+
+.offer span{
+font-size:11px;
+}
+
+header{
+height:45px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 10px;
+position:absolute;
+top:35px;
+left:0;
+width:100%;
+z-index:5;
+}
+
+.logo{
+height: 30px;
+width: 15px;
+display: flex;
+}
+
+.header-right{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.header-right select{
+background:transparent;
+border:1px solid #777;
+color:white;
+padding:4px 5px;
+font-size:8px;
+}
+
+.header-right select option{
+color:black;
+}
+
+.signin{
+border:none;
+background:#e50914;
+color:white;
+padding:6px 10px;
+border-radius:3px;
+font-size:8px;
+}
+
+.hero{
+min-height:430px;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.9)),url("https://assets.nflxext.com/ffe/siteui/vlv3/0ce6c17e-e188-4f13-aaf2-6366e12ba739/web/DE-en-20260803-TRIFECTA-perspective_c7943cab-b0f0-4e52-8673-de9147611f52_large.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:90px 20px 30px;
+}
+
+.hero-content{
+width:100%;
+max-width:500px;
+}
+
+.hero h1{
+font-size:25px;
+line-height:1.2;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:11px;
+margin-bottom:12px;
+}
+
+.hero .small-text{
+font-size:9px;
+line-height:1.5;
+margin-top:20px;
+}
+
+.email-box{
+margin-top:15px;
+}
+
+.email-box input{
+width:100%;
+height:38px;
+background:rgba(20,20,20,.75);
+border:1px solid #777;
+border-radius:3px;
+padding:0 10px;
+color:white;
+font-size:9px;
+}
+
+.email-box button{
+margin-top:8px;
+width:145px;
+height:35px;
+background:#e50914;
+color:white;
+border:none;
+border-radius:3px;
+font-size:9px;
+font-weight:bold;
+}
+
+.email-box button span{
+font-size:18px;
+vertical-align:middle;
+}
+
+.member{
+font-size:8px!important;
+color:#aaa;
+margin-top:8px;
+}
+
+.section{
+padding:25px 10px 10px;
+}
+
+.section h2{
+font-size:11px;
+margin-bottom:14px;
+}
+
+.trending{
+display:flex;
+gap:8px;
+overflow:hidden;
+}
+
+.movie{
+position:relative;
+min-width:105px;
+height:145px;
+}
+
+.movie img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:5px;
+}
+
+.movie span{
+position:absolute;
+bottom:-4px;
+left:-4px;
+z-index:2;
+font-size:43px;
+font-weight:bold;
+color:#000;
+-webkit-text-stroke:1px white;
+}
+
+.reasons-section{
+padding-top:25px;
+}
+
+.reasons{
+display:flex;
+flex-direction:column;
+gap:7px;
+}
+
+.reason{
+min-height:105px;
+padding:14px 12px;
+border-radius:9px;
+background:linear-gradient(135deg,#17182c,#271536);
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+overflow:hidden;
+}
+
+.reason h3{
+font-size:10px;
+margin-bottom:8px;
+}
+
+.reason p{
+font-size:7px;
+line-height:1.5;
+color:#d0cdd3;
+max-width:230px;
+}
+
+.reason-icon{
+font-size:24px;
+margin-left:5px;
+}
+
+.faq-section{
+padding-top:25px;
+}
+
+.faq{
+display:flex;
+flex-direction:column;
+gap:2px;
+}
+
+.question{
+height:34px;
+background:#292929;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 12px;
+font-size:9px;
+}
+
+.question span:last-child{
+font-size:17px;
+}
+
+.signup{
+padding:25px 10px 15px;
+}
+
+.signup>p:first-child{
+font-size:8px;
+line-height:1.5;
+margin-bottom:10px;
+}
+
+.signup input{
+width:100%;
+height:34px;
+background:#080808;
+border:1px solid #555;
+border-radius:3px;
+padding:0 9px;
+color:white;
+font-size:8px;
+}
+
+.signup button{
+width:130px;
+height:32px;
+margin-top:7px;
+background:#e50914;
+color:white;
+border:none;
+border-radius:3px;
+font-size:8px;
+font-weight:bold;
+}
+
+.signup button span{
+font-size:16px;
+}
+
+.terms{
+margin-top:15px;
+color:#999;
+font-size:7px;
+line-height:1.5;
+}
+
+footer{
+padding:25px 10px 35px;
+color:#777;
+}
+
+.questions{
+font-size:8px;
+margin-bottom:22px;
+}
+
+.footer-links{
+display:grid;
+grid-template-columns:1fr 1fr;
+row-gap:13px;
+margin-bottom:25px;
+}
+
+.footer-links a{
+color:#777;
+font-size:7px;
+text-decoration:underline;
+}
+
+.language{
+background:#111;
+border:1px solid #555;
+color:#aaa;
+padding:7px 12px;
+font-size:8px;
+}
+
+.netflix-india{
+margin-top:20px;
+font-size:8px;
+}
+
+@media(min-width:600px){
+.offer{
+font-size:11px;
+}
+
+header{
+padding:0 30px;
+}
+
+.logo{
+font-size:24px;
+}
+
+.hero{
+min-height:600px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.trending{
+max-width:600px;
+margin:auto;
+}
+
+.movie{
+min-width:170px;
+height:230px;
+}
+
+.reasons{
+display:grid;
+grid-template-columns:1fr 1fr;
+max-width:700px;
+margin:auto;
+}
+
+.reason{
+min-height:150px;
+}
+
+.faq{
+max-width:700px;
+margin:auto;
+}
+}
+
+@media(min-width:1000px){
+header{
+padding:0 55px;
+}
+
+.hero{
+min-height:700px;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.email-box{
+display:flex;
+gap:5px;
+}
+
+.email-box input{
+height:45px;
+}
+
+.email-box button{
+margin-top:0;
+height:45px;
+width:170px;
+}
+
+.trending{
+max-width:900px;
+}
+
+.movie{
+min-width:200px;
+height:280px;
+}
+
+.reasons{
+max-width:900px;
+}
+
+.footer-links{
+grid-template-columns:repeat(4,1fr);
+max-width:900px;
+}
+}
